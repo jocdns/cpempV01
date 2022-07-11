@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-08T14:59:03 NPT" name="Testing ConnectedPortfolio" finished-at="2022-07-08T15:01:36 NPT" duration-ms="152516">
+    <groups>
+    </groups>
+    <test started-at="2022-07-08T14:59:03 NPT" name="Employer Login Test" finished-at="2022-07-08T14:59:24 NPT" duration-ms="20764">
+      <class name="com.connectEDPortfolio.testCases.Employer_Login">
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestContext)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Login@2b662a77]" started-at="2022-07-08T14:59:03 NPT" name="onTestStart" finished-at="2022-07-08T14:59:03 NPT" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4bdf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method signature="positiveLoginTestCase()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Login@2b662a77]" started-at="2022-07-08T14:59:03 NPT" name="positiveLoginTestCase" finished-at="2022-07-08T14:59:24 NPT" duration-ms="20704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- positiveLoginTestCase -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Login@2b662a77]" started-at="2022-07-08T14:59:24 NPT" name="checkStatus" finished-at="2022-07-08T14:59:24 NPT" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.connectEDPortfolio.testCases.Employer_Login.positiveLoginTestCase() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=positiveLoginTestCase status=SUCCESS method=Employer_Login.positiveLoginTestCase()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Login@2b662a77] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+      </class> <!-- com.connectEDPortfolio.testCases.Employer_Login -->
+    </test> <!-- Employer Login Test -->
+    <test started-at="2022-07-08T14:59:24 NPT" name="Employer Create Student Testcase - ETS05" finished-at="2022-07-08T15:01:36 NPT" duration-ms="131719">
+      <class name="com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T14:58:52 NPT" name="setup" finished-at="2022-07-08T14:59:03 NPT" duration-ms="11472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestContext)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T14:59:24 NPT" name="onTestStart" finished-at="2022-07-08T14:59:24 NPT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7a9eccc4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onTestStart -->
+        <test-method signature="addNewStudent()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T14:59:24 NPT" name="addNewStudent" finished-at="2022-07-08T15:00:15 NPT" duration-ms="51136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewStudent -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:00:15 NPT" name="checkStatus" finished-at="2022-07-08T15:00:15 NPT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.addNewStudent() throws java.lang.InterruptedException,java.awt.AWTException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=addNewStudent status=SUCCESS method=Employer_Create_Student_ETS05.addNewStudent()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="assignProgToExistingStu()[pri:1, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:00:15 NPT" name="assignProgToExistingStu" finished-at="2022-07-08T15:00:57 NPT" duration-ms="41943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignProgToExistingStu -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:00:57 NPT" name="checkStatus" finished-at="2022-07-08T15:00:57 NPT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.assignProgToExistingStu() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=assignProgToExistingStu status=SUCCESS method=Employer_Create_Student_ETS05.assignProgToExistingStu()[pri:1, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="addStudentNegativeTest()[pri:2, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:00:57 NPT" name="addStudentNegativeTest" finished-at="2022-07-08T15:01:13 NPT" duration-ms="15755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addStudentNegativeTest -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:01:13 NPT" name="checkStatus" finished-at="2022-07-08T15:01:13 NPT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.addStudentNegativeTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=addStudentNegativeTest status=SUCCESS method=Employer_Create_Student_ETS05.addStudentNegativeTest()[pri:2, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method signature="bulkImportStudent()[pri:3, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:01:13 NPT" name="bulkImportStudent" finished-at="2022-07-08T15:01:36 NPT" duration-ms="22861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bulkImportStudent -->
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:01:36 NPT" name="checkStatus" finished-at="2022-07-08T15:01:36 NPT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.bulkImportStudent() throws java.lang.InterruptedException,java.awt.AWTException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=bulkImportStudent status=SUCCESS method=Employer_Create_Student_ETS05.bulkImportStudent()[pri:3, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:01:36 NPT" name="tearDown" finished-at="2022-07-08T15:01:37 NPT" duration-ms="1541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05 -->
+    </test> <!-- Employer Create Student Testcase - ETS05 -->
+  </suite> <!-- Testing ConnectedPortfolio -->
+</testng-results>

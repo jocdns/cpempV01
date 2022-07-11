@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing ConnectedPortfolio">
+	<parameter name="browser" value="chrome" />
+
+	<test name="Employer Login Test">
+		<parameter name="author" value="Dinesh" />
+		<classes>
+			<class name="com.connectEDPortfolio.testCases.Employer_Login">
+				<methods>
+					<exclude name="negativeLoginTestCase" />
+					<include name="positiveLoginTestCase" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+<!-- 
+	<test name="Employer Home Page Test- ETS02">
+		<parameter name="author" value="Dinesh" />
+		<classes>
+			<class name="com.connectEDPortfolio.testCases.Employer_HomePage">				
+			</class>
+		</classes>
+	</test>
+
+	<test name="Employer News Post Test- ETS03">
+		<parameter name="author" value="Dinesh" />
+		<classes>
+			<class name="com.connectEDPortfolio.testCases.Employer_NewsPost">			
+			</class>
+		</classes>
+	</test>
+
+	<test name="features from Student Page of Employer test- ETS04">
+		<parameter name="author" value="Dinesh" />
+		<classes>
+			<class name="com.connectEDPortfolio.testCases.Employer_Student_Page">				
+			</class>
+		</classes>
+	</test>  
+	
+	<test name="Employer Create Student Testcase - ETS05">
+		<parameter name="author" value="Dinesh" />
+		<classes>
+			<class name="com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05">				
+			</class>
+		</classes>
+	</test> -->
+</suite> 
+	

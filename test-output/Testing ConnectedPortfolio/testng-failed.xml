@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testing ConnectedPortfolio]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Employer Create Student Testcase - ETS05(failed)">
+    <parameter name="author" value="Dinesh"/>
+    <classes>
+      <class name="com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05">
+        <methods>
+          <include name="addStudentNegativeTest"/>
+          <include name="checkStatus"/>
+          <include name="assignProgToExistingStu"/>
+          <include name="bulkImportStudent"/>
+          <include name="addNewStudent"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="onTestStart"/>
+        </methods>
+      </class> <!-- com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05 -->
+    </classes>
+  </test> <!-- Employer Create Student Testcase - ETS05(failed) -->
+</suite> <!-- Failed suite [Testing ConnectedPortfolio] -->
