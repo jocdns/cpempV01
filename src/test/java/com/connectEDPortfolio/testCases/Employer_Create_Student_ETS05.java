@@ -8,10 +8,13 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class Employer_Create_Student_ETS05 extends BaseClass {
   
 
+	SoftAssert softAssert = new SoftAssert();
+	
 	static String csvFilePath="C:\\sikuliimg\\employerbulkimportcorrectfile.csv";	
 	
 	public String fName=readconfig.fNameOfStuToBeCreated();
@@ -104,7 +107,9 @@ public class Employer_Create_Student_ETS05 extends BaseClass {
 					;
 				{
 					System.out.println("Student created successfully. New Student is =" + name);
+					softAssert.assertEquals(name,expCreatedStuName);
 					extentTest.pass("Student created successfully.");
+					softAssert.assertAll();
 					break;
 				}
 			}
@@ -112,16 +117,18 @@ public class Employer_Create_Student_ETS05 extends BaseClass {
 
 		} else {
 			System.out.println("Thre is problem while creating student. --ERROR Message Is: ");
+			softAssert.assertTrue(false);
 			extentTest.fail("Thre is problem while creating student. --ERROR");
-			System.out.println(driver.findElement(By.cssSelector(
-					"body.admin-dashboard-design.INDlangdirLTR.INDpositionLeft.INDDesktop.INDChrome.INDhasDragTooltip.modal-open:nth-child(2) div.main-wrapper:nth-child(2) div.container div.contain-wrapper div:nth-child(1) div.modal.fade.markascompleteCourseModal.in:nth-child(3) div.modal-dialog.modal-md div.modal-content > div.modal-body"))
-					.getText());
-			driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();
-			Thread.sleep(3000);		
-			driver.navigate().back();
-			Thread.sleep(3000);
-			driver.navigate().refresh();
-			Thread.sleep(5000);
+//			System.out.println(driver.findElement(By.cssSelector(
+//					"body.admin-dashboard-design.INDlangdirLTR.INDpositionLeft.INDDesktop.INDChrome.INDhasDragTooltip.modal-open:nth-child(2) div.main-wrapper:nth-child(2) div.container div.contain-wrapper div:nth-child(1) div.modal.fade.markascompleteCourseModal.in:nth-child(3) div.modal-dialog.modal-md div.modal-content > div.modal-body"))
+//					.getText());
+//			driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();
+//			Thread.sleep(3000);		
+//			driver.navigate().back();
+//			Thread.sleep(3000);
+//			driver.navigate().refresh();
+//			Thread.sleep(5000);
+			softAssert.assertAll();
 		}
 
 		
@@ -137,6 +144,11 @@ public class Employer_Create_Student_ETS05 extends BaseClass {
 	{
 		extentTest.info("Assign Programme To Existing Student test started");
 
+		driver.navigate().refresh();
+		Thread.sleep(5000);
+		driver.navigate().back();
+		Thread.sleep(3000);
+		
 		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]")).click();
 		Thread.sleep(5000);
 		
@@ -217,6 +229,8 @@ public class Employer_Create_Student_ETS05 extends BaseClass {
 				{
 					System.out.println("Student created successfully. New Student is =" + name);
 					extentTest.pass("Student created successfully");
+					softAssert.assertTrue(true);
+					softAssert.assertAll();
 					break;
 				}
 			}
@@ -224,17 +238,18 @@ public class Employer_Create_Student_ETS05 extends BaseClass {
 		} else {
 			System.out.println("Thre is problem while creating student. --ERROR Message Is: ");
 			extentTest.fail("There is problem while creating student. --ERROR");
+			softAssert.assertTrue(true);
 
-			System.out.println(driver.findElement(By.xpath(
-					"//body/div[@id='om-apprenticeship-app-wrapper']/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]"))
-					.getText());
-			driver.findElement(By.xpath("//button[contains(text(),'Ok')]")).click();
-			
-			driver.navigate().back();
-			Thread.sleep(2000);
-			driver.navigate().refresh();
-			Thread.sleep(5000);
-			
+//			System.out.println(driver.findElement(By.xpath(
+//					"//body/div[@id='om-apprenticeship-app-wrapper']/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]"))
+//					.getText());
+//			driver.findElement(By.xpath("//button[contains(text(),'Ok')]")).click();
+//			
+//			driver.navigate().back();
+//			Thread.sleep(2000);
+//			driver.navigate().refresh();
+//			Thread.sleep(5000);
+			softAssert.assertAll();
 		}
 
 		
@@ -250,6 +265,12 @@ public class Employer_Create_Student_ETS05 extends BaseClass {
 		
 		extentTest.info(" Add Student Negative testCase started");
 
+		driver.navigate().refresh();
+		Thread.sleep(5000);
+
+		driver.navigate().back();
+		Thread.sleep(2000);
+		
 		driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/a[1]")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.cssSelector(
@@ -259,35 +280,43 @@ public class Employer_Create_Student_ETS05 extends BaseClass {
 		
 		String expProgFieldValidation="The program field is required";
 		String actProgFieldValidaiton = driver.findElement(By.xpath(
-				"//body/div[@id='om-apprenticeship-app-wrapper']/div[2]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/div[1]"))
+				"/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/form[1]/div[2]/div[1]/div[1]/div[2]"))
 				.getText();
 		if(actProgFieldValidaiton.contains(expProgFieldValidation));
 		{
+			softAssert.assertEquals(actProgFieldValidaiton,expProgFieldValidation);
 			System.out.println("Programme Field Validation appears Correctly. Displayed Text is: "+ actProgFieldValidaiton);
+			extentTest.pass("Programme Field Validation appears Correctly");
+//			softAssert.assertAll();
 			}
 		
 		
 		
 		String expFnameFieldValidation="The first_name field is required";
 		String actFnameFieldValidaiton = driver.findElement(By.xpath(
-				"//body/div[@id='om-apprenticeship-app-wrapper']/div[2]/div[1]/div[2]/div[1]/form[1]/div[4]/div[1]/div[1]/div[1]"))
+				"/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/form[1]/div[4]/div[1]/div[1]/div[1]/div[1]"))
 				.getText();
 		if(actFnameFieldValidaiton.contains(expFnameFieldValidation));
 		{
+			softAssert.assertEquals(actFnameFieldValidaiton,expFnameFieldValidation);
 			System.out.println("First Name Field Validation appears Correctly. Displayed Text is: "+ actFnameFieldValidaiton);
 			extentTest.pass("First Name Field Validation appears Correctly");
+//			softAssert.assertAll();
 			}
 		
 		
 		
 		String expLnameFieldValidation="The last_name field is required";
 		String actLnameFieldValidaiton = driver.findElement(By.xpath(
-				"//body/div[@id='om-apprenticeship-app-wrapper']/div[2]/div[1]/div[2]/div[1]/form[1]/div[4]/div[2]/div[1]/div[1]"))
+				"/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/form[1]/div[4]/div[2]/div[1]/div[1]/div[1]"))
 				.getText();
 		if(actLnameFieldValidaiton.contains(expLnameFieldValidation));
 		{
+			softAssert.assertEquals(actLnameFieldValidaiton,expLnameFieldValidation);
 			System.out.println("Last Name Field Validation appears Correctly. Displayed Text is: "+ actLnameFieldValidaiton);
 			extentTest.pass("Last Name Field Validation appears Correctly");
+			
+//			softAssert.assertAll();
 			}
 		
 		
@@ -295,24 +324,30 @@ public class Employer_Create_Student_ETS05 extends BaseClass {
 		
 		String expEmailFieldValidation="The email field is required";
 		String actEmailFieldValidaiton = driver.findElement(By.xpath(
-				"//body/div[@id='om-apprenticeship-app-wrapper']/div[2]/div[1]/div[2]/div[1]/form[1]/div[4]/div[3]/div[1]/div[1]"))
+				"/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/form[1]/div[4]/div[3]/div[1]/div[1]/div[1]"))
 				.getText();
 		if(actEmailFieldValidaiton.contains(expEmailFieldValidation));
 		{
+			softAssert.assertEquals(actEmailFieldValidaiton,expEmailFieldValidation);
 			System.out.println("Email Field Validation appears Correctly. Displayed Text is: "+ actEmailFieldValidaiton);
 			extentTest.pass("Email Field Validation appears Correctly");
+			
+//			softAssert.assertAll();
 			}
 		
 		
 		
-		String expWWHFieldValidation="The first_name field is required";
+		String expWWHFieldValidation="The weekly working hours field must be numeric and may contain decimal points";
 		String actWWHFieldValidaiton = driver.findElement(By.xpath(
-				"//body/div[@id='om-apprenticeship-app-wrapper']/div[2]/div[1]/div[2]/div[1]/form[1]/div[5]/div[1]/div[1]"))
+				"/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/form[1]/div[5]/div[1]/div[1]/div[1]"))
 				.getText();
 		if(actWWHFieldValidaiton.contains(expWWHFieldValidation));
 		{
+			softAssert.assertEquals(actWWHFieldValidaiton,expWWHFieldValidation);
 			System.out.println("Weekly Learning Hour Field Validation appears Correctly. Displayed Text is: "+ actWWHFieldValidaiton);
 			extentTest.pass("Weekly Learning Hour Field Validation appears Correctly");
+			
+//			softAssert.assertAll();
 		}
 		
 		
@@ -320,19 +355,23 @@ public class Employer_Create_Student_ETS05 extends BaseClass {
 		
 		String expCelNumFieldValidation="Cellular number must be between seven to eleven digits";
 		String actCelNumFieldValidaiton = driver.findElement(By.xpath(
-				"//body/div[@id='om-apprenticeship-app-wrapper']/div[2]/div[1]/div[2]/div[1]/form[1]/div[9]/div[1]/div[2]"))
+				"/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[1]/form[1]/div[9]/div[1]/div[2]/div[1]"))
 				.getText();
 		if(actCelNumFieldValidaiton.contains(expCelNumFieldValidation));
 		{
+			softAssert.assertEquals(actCelNumFieldValidaiton,expCelNumFieldValidation);
 			System.out.println("Mobile Field Validation appears Correctly. Displayed Text is: "+ actCelNumFieldValidaiton);
 			extentTest.pass("Mobile Field Validation appears Correctly");
+			
+//			softAssert.assertAll();
 			}
-		
+		softAssert.assertAll();
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//body[1]/div[2]/div[1]/header[1]/nav[1]/div[1]/div[2]/ul[1]/li[2]/a[1]/span[1]"))
 		.click();
 		Thread.sleep(3000);
 		driver.navigate().refresh();
+		Thread.sleep(5000);
 	}
 
 
@@ -369,12 +408,16 @@ public class Employer_Create_Student_ETS05 extends BaseClass {
 		{
 			System.out.println("Students are imported successfully");
 			extentTest.pass("Students are imported successfully");
+			softAssert.assertTrue(true);
+			softAssert.assertAll();
 			//Assert.assertTrue(true);
 		}
 		else
 		{
 			System.out.println("Failed to Import Student");
 			extentTest.fail("Failed to Import Student");
+			softAssert.assertTrue(false);
+			
 			
 			boolean errorModal = driver.findElement(By.xpath(
 					"//body/div[@id='om-apprenticeship-app-wrapper']/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]"))
@@ -384,7 +427,7 @@ public class Employer_Create_Student_ETS05 extends BaseClass {
 			
 			System.out.println("Error Message are:");
 			System.out.println(errorMessage);
-			
+			softAssert.assertAll();
 		}
 			
 		Thread.sleep(5000);

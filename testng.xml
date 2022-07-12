@@ -13,8 +13,9 @@
 				</methods>
 			</class>
 		</classes>
-	</test> <!-- Test -->
-<!-- 
+	</test> 
+		<!-- 
+	
 	<test name="Employer Home Page Test- ETS02">
 		<parameter name="author" value="Dinesh" />
 		<classes>
@@ -37,7 +38,7 @@
 			<class name="com.connectEDPortfolio.testCases.Employer_Student_Page">				
 			</class>
 		</classes>
-	</test>  
+	</test>  -->
 	
 	<test name="Employer Create Student Testcase - ETS05">
 		<parameter name="author" value="Dinesh" />
@@ -45,6 +46,14 @@
 			<class name="com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05">				
 			</class>
 		</classes>
-	</test> -->
+	</test>   
+	<!-- 
+	<test name="Employer Student program detail page Testcase - ETS06">
+		<parameter name="author" value="Dinesh" />
+		<classes>
+			<class name="com.connectEDPortfolio.testCases.Employer_Student_Prog_Detail_Page_ETS06">				
+			</class>
+		</classes>
+	</test>   -->
 </suite> 
 	

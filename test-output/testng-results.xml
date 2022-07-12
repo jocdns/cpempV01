@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
+<testng-results ignored="1" total="6" passed="1" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-08T14:59:03 NPT" name="Testing ConnectedPortfolio" finished-at="2022-07-08T15:01:36 NPT" duration-ms="152516">
+  <suite started-at="2022-07-12T17:39:17 NPT" name="Testing ConnectedPortfolio" finished-at="2022-07-12T17:41:37 NPT" duration-ms="140193">
     <groups>
     </groups>
-    <test started-at="2022-07-08T14:59:03 NPT" name="Employer Login Test" finished-at="2022-07-08T14:59:24 NPT" duration-ms="20764">
+    <test started-at="2022-07-12T17:39:17 NPT" name="Employer Login Test" finished-at="2022-07-12T17:39:35 NPT" duration-ms="18145">
       <class name="com.connectEDPortfolio.testCases.Employer_Login">
-        <test-method is-config="true" signature="onTestStart(org.testng.ITestContext)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Login@2b662a77]" started-at="2022-07-08T14:59:03 NPT" name="onTestStart" finished-at="2022-07-08T14:59:03 NPT" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestContext)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Login@2b662a77]" started-at="2022-07-12T17:39:17 NPT" name="onTestStart" finished-at="2022-07-12T17:39:17 NPT" duration-ms="15" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4bdf]]>
+                <![CDATA[org.testng.TestRunner@3440e9cd]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onTestStart -->
-        <test-method signature="positiveLoginTestCase()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Login@2b662a77]" started-at="2022-07-08T14:59:03 NPT" name="positiveLoginTestCase" finished-at="2022-07-08T14:59:24 NPT" duration-ms="20704" status="PASS">
+        <test-method signature="positiveLoginTestCase()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Login@2b662a77]" started-at="2022-07-12T17:39:17 NPT" name="positiveLoginTestCase" finished-at="2022-07-12T17:39:35 NPT" duration-ms="18078" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positiveLoginTestCase -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Login@2b662a77]" started-at="2022-07-08T14:59:24 NPT" name="checkStatus" finished-at="2022-07-08T14:59:24 NPT" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Login@2b662a77]" started-at="2022-07-12T17:39:35 NPT" name="checkStatus" finished-at="2022-07-12T17:39:35 NPT" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,9 +40,9 @@
         </test-method> <!-- checkStatus -->
       </class> <!-- com.connectEDPortfolio.testCases.Employer_Login -->
     </test> <!-- Employer Login Test -->
-    <test started-at="2022-07-08T14:59:24 NPT" name="Employer Create Student Testcase - ETS05" finished-at="2022-07-08T15:01:36 NPT" duration-ms="131719">
+    <test started-at="2022-07-12T17:39:35 NPT" name="Employer Create Student Testcase - ETS05" finished-at="2022-07-12T17:41:37 NPT" duration-ms="122017">
       <class name="com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T14:58:52 NPT" name="setup" finished-at="2022-07-08T14:59:03 NPT" duration-ms="11472" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b]" started-at="2022-07-12T17:39:06 NPT" name="setup" finished-at="2022-07-12T17:39:17 NPT" duration-ms="10914" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,22 +53,62 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="onTestStart(org.testng.ITestContext)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T14:59:24 NPT" name="onTestStart" finished-at="2022-07-08T14:59:24 NPT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="onTestStart(org.testng.ITestContext)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b]" started-at="2022-07-12T17:39:35 NPT" name="onTestStart" finished-at="2022-07-12T17:39:35 NPT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7a9eccc4]]>
+                <![CDATA[org.testng.TestRunner@1163a27]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onTestStart -->
-        <test-method signature="addNewStudent()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T14:59:24 NPT" name="addNewStudent" finished-at="2022-07-08T15:00:15 NPT" duration-ms="51136" status="PASS">
+        <test-method signature="addNewStudent()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b]" started-at="2022-07-12T17:39:35 NPT" name="addNewStudent" finished-at="2022-07-12T17:40:26 NPT" duration-ms="50654" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.addNewStudent(Employer_Create_Student_ETS05.java:131)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewStudent -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:00:15 NPT" name="checkStatus" finished-at="2022-07-08T15:00:15 NPT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b]" started-at="2022-07-12T17:40:26 NPT" name="checkStatus" finished-at="2022-07-12T17:40:26 NPT" duration-ms="231" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,18 +117,58 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=addNewStudent status=SUCCESS method=Employer_Create_Student_ETS05.addNewStudent()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9] output={null}]]]>
+                <![CDATA[[TestResult name=addNewStudent status=FAILURE method=Employer_Create_Student_ETS05.addNewStudent()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method signature="assignProgToExistingStu()[pri:1, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:00:15 NPT" name="assignProgToExistingStu" finished-at="2022-07-08T15:00:57 NPT" duration-ms="41943" status="PASS">
+        <test-method signature="assignProgToExistingStu()[pri:1, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b]" started-at="2022-07-12T17:40:26 NPT" name="assignProgToExistingStu" finished-at="2022-07-12T17:41:18 NPT" duration-ms="52647" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.assignProgToExistingStu(Employer_Create_Student_ETS05.java:252)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignProgToExistingStu -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:00:57 NPT" name="checkStatus" finished-at="2022-07-08T15:00:57 NPT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b]" started-at="2022-07-12T17:41:18 NPT" name="checkStatus" finished-at="2022-07-12T17:41:19 NPT" duration-ms="149" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,18 +177,58 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=assignProgToExistingStu status=SUCCESS method=Employer_Create_Student_ETS05.assignProgToExistingStu()[pri:1, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9] output={null}]]]>
+                <![CDATA[[TestResult name=assignProgToExistingStu status=FAILURE method=Employer_Create_Student_ETS05.assignProgToExistingStu()[pri:1, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method signature="addStudentNegativeTest()[pri:2, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:00:57 NPT" name="addStudentNegativeTest" finished-at="2022-07-08T15:01:13 NPT" duration-ms="15755" status="PASS">
+        <test-method signature="addStudentNegativeTest()[pri:2, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b]" started-at="2022-07-12T17:41:19 NPT" name="addStudentNegativeTest" finished-at="2022-07-12T17:41:36 NPT" duration-ms="17906" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.addStudentNegativeTest(Employer_Create_Student_ETS05.java:367)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addStudentNegativeTest -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:01:13 NPT" name="checkStatus" finished-at="2022-07-08T15:01:13 NPT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b]" started-at="2022-07-12T17:41:36 NPT" name="checkStatus" finished-at="2022-07-12T17:41:37 NPT" duration-ms="178" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,18 +237,84 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=addStudentNegativeTest status=SUCCESS method=Employer_Create_Student_ETS05.addStudentNegativeTest()[pri:2, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9] output={null}]]]>
+                <![CDATA[[TestResult name=addStudentNegativeTest status=FAILURE method=Employer_Create_Student_ETS05.addStudentNegativeTest()[pri:2, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method signature="bulkImportStudent()[pri:3, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:01:13 NPT" name="bulkImportStudent" finished-at="2022-07-08T15:01:36 NPT" duration-ms="22861" status="PASS">
+        <test-method signature="bulkImportStudent()[pri:3, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b]" started-at="2022-07-12T17:41:37 NPT" name="bulkImportStudent" finished-at="2022-07-12T17:41:37 NPT" duration-ms="24" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Bulk Import')]"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-6JB123S', ip: '192.168.18.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6b5d4cd514f5842b8a098f09c6138dd, findElement {using=xpath, value=//a[contains(text(),'Bulk Import')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:16289}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:16289/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6b5d4cd514f5842b8a098f09c6138dd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Bulk Import')]"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-6JB123S', ip: '192.168.18.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6b5d4cd514f5842b8a098f09c6138dd, findElement {using=xpath, value=//a[contains(text(),'Bulk Import')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:16289}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:16289/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f6b5d4cd514f5842b8a098f09c6138dd
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+at com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.bulkImportStudent(Employer_Create_Student_ETS05.java:383)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bulkImportStudent -->
-        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:01:36 NPT" name="checkStatus" finished-at="2022-07-08T15:01:36 NPT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="checkStatus(java.lang.reflect.Method,org.testng.ITestResult)[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b]" started-at="2022-07-12T17:41:37 NPT" name="checkStatus" finished-at="2022-07-12T17:41:37 NPT" duration-ms="203" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -137,14 +323,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=bulkImportStudent status=SUCCESS method=Employer_Create_Student_ETS05.bulkImportStudent()[pri:3, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9] output={null}]]]>
+                <![CDATA[[TestResult name=bulkImportStudent status=FAILURE method=Employer_Create_Student_ETS05.bulkImportStudent()[pri:3, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@73a1e9a9]" started-at="2022-07-08T15:01:36 NPT" name="tearDown" finished-at="2022-07-08T15:01:37 NPT" duration-ms="1541" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05@3590fc5b]" started-at="2022-07-12T17:41:37 NPT" name="tearDown" finished-at="2022-07-12T17:41:38 NPT" duration-ms="1039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

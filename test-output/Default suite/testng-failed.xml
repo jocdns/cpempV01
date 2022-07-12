@@ -3,20 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.connectEDPortfolio.testCases.Employer_Student_Page">
+      <class name="com.connectEDPortfolio.testCases.Employer_Student_Prog_Detail_Page_ETS06">
         <methods>
-          <include name="deleteStudent"/>
-          <include name="searchStudent"/>
+          <include name="viewParticularStudent"/>
           <include name="checkStatus"/>
-          <include name="goToStudentPage"/>
-          <include name="filterStudentByProgName"/>
-          <include name="viewProgressBtnFromModal"/>
+          <include name="verifyStudentProgDetailPage"/>
           <include name="setup"/>
-          <include name="onTestStart"/>
           <include name="tearDown"/>
-          <include name="editStudent"/>
+          <include name="onTestStart"/>
         </methods>
-      </class> <!-- com.connectEDPortfolio.testCases.Employer_Student_Page -->
+      </class> <!-- com.connectEDPortfolio.testCases.Employer_Student_Prog_Detail_Page_ETS06 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -13,8 +13,8 @@
           <include name="bulkImportStudent"/>
           <include name="addNewStudent"/>
           <include name="setup"/>
-          <include name="tearDown"/>
           <include name="onTestStart"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05 -->
     </classes>
