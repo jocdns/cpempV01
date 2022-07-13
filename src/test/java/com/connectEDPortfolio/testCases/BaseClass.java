@@ -230,4 +230,13 @@ public class BaseClass {
 		driver.navigate().to("https://testtalk.uat.connectedportfolio.com/employer");
 	}
 	
+	
+	/*
+	 * ###### This Method is created to navigate window on student page directly
+	 * from anywhere #######
+	 */
+	public void returnToStudentPage() throws InterruptedException {
+		driver.navigate().to("https://testtalk.uat.connectedportfolio.com/employer/learner");
+		Thread.sleep(5000);
+	}
 }

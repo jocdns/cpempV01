@@ -447,7 +447,7 @@ public class Target_Functionality {
 	 * ###### This Method is created to navigate window on student page directly
 	 * from anywhere #######
 	 */
-	static void returnToStudentPage(WebDriver driver) throws InterruptedException {
+	public static void returnToStudentPage(WebDriver driver) throws InterruptedException {
 		driver.navigate().to("https://testtalk.uat.connectedportfolio.com/employer/learner");
 		Thread.sleep(5000);
 	}
