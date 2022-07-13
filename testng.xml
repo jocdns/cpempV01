@@ -14,7 +14,7 @@
 			</class>
 		</classes>
 	</test> 
-		
+		<!--    
 	
 	<test name="Employer Home Page Test- ETS02">
 		<parameter name="author" value="Dinesh" />
@@ -54,6 +54,7 @@
 			<class name="com.connectEDPortfolio.testCases.Employer_Student_Prog_Detail_Page_ETS06">				
 			</class>
 		</classes>
-	</test>  
+	</test>  -->
+	
 </suite> 
 	

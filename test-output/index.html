@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods, 3 failed,   12 passed</span>
+                    <span class="method-stats">15 methods, 4 failed,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -115,6 +115,11 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Testing_ConnectedPortfolio" title="com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05" class="method navigator-link" hash-for-method="bulkImportStudent">bulkImportStudent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Testing_ConnectedPortfolio" title="com.connectEDPortfolio.testCases.Employer_NewsPost" class="method navigator-link" hash-for-method="emp_Create_NewsPost">emp_Create_NewsPost</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Testing_ConnectedPortfolio -->
@@ -139,11 +144,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Testing_ConnectedPortfolio" title="com.connectEDPortfolio.testCases.Employer_Student_Page" class="method navigator-link" hash-for-method="editStudent">editStudent</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Testing_ConnectedPortfolio" title="com.connectEDPortfolio.testCases.Employer_NewsPost" class="method navigator-link" hash-for-method="emp_Create_NewsPost">emp_Create_NewsPost</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -235,11 +235,64 @@
                   <a name="bulkImportStudent">
                   </a> <!-- bulkImportStudent -->
                   <span class="method-name">bulkImportStudent</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false]
-	at com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.bulkImportStudent(Employer_Create_Student_ETS05.java:418)
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;/employer/student/bulk-import&quot; class=&quot;common-button btn-info heading-lg-btn-2&quot;&gt;...&lt;/a&gt; is not clickable at point (1125, 18). Other element would receive the click: &lt;li class=&quot;dropdown&quot;&gt;...&lt;/li&gt;
+  (Session info: chrome=103.0.5060.114)
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-6JB123S&apos;, ip: &apos;192.168.18.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35dfe220ccda228acdbdc0101e5beb7e, clickElement {id=73fa8eb1-d255-4dd3-b90b-806940d1679e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:28607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:28607/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (35dfe220ccda228acdbdc0101e5beb7e)] -&gt; xpath: //a[contains(text(),&apos;Bulk Import&apos;)]]
+Session ID: 35dfe220ccda228acdbdc0101e5beb7e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.bulkImportStudent(Employer_Create_Student_ETS05.java:390)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Testing_ConnectedPortfolio-class-failed -->
+          <div class="suite-Testing_ConnectedPortfolio-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.connectEDPortfolio.testCases.Employer_NewsPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="emp_Create_NewsPost">
+                  </a> <!-- emp_Create_NewsPost -->
+                  <span class="method-name">emp_Create_NewsPost</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:void(0);&quot; class=&quot;&quot;&gt;...&lt;/a&gt; is not clickable at point (736, 15). Other element would receive the click: &lt;span&gt;...&lt;/span&gt;
+  (Session info: chrome=103.0.5060.114)
+Build info: version: &apos;4.1.3&apos;, revision: &apos;7b1ebf28ef&apos;
+System info: host: &apos;DESKTOP-6JB123S&apos;, ip: &apos;192.168.18.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [35dfe220ccda228acdbdc0101e5beb7e, clickElement {id=58a964a3-a30d-4ecc-a91e-c5318c272804}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:28607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:28607/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (35dfe220ccda228acdbdc0101e5beb7e)] -&gt; xpath: //body/div[@id=&apos;om-apprenticeship-app-wrapper&apos;]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/span[1]/a[1]]
+Session ID: 35dfe220ccda228acdbdc0101e5beb7e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.connectEDPortfolio.testCases.Employer_NewsPost.emp_Create_NewsPost(Employer_NewsPost.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -362,21 +415,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Testing_ConnectedPortfolio-class-passed -->
-          <div class="suite-Testing_ConnectedPortfolio-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.connectEDPortfolio.testCases.Employer_NewsPost</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="emp_Create_NewsPost">
-                  </a> <!-- emp_Create_NewsPost -->
-                  <span class="method-name">emp_Create_NewsPost</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Testing_ConnectedPortfolio-class-passed -->
         </div> <!-- panel Testing_ConnectedPortfolio -->
         <div panel-name="test-xml-Testing_ConnectedPortfolio" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -485,63 +523,63 @@ data.addRows(15);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'editStudent')
 data.setCell(0, 2, 'com.connectEDPortfolio.testCases.Employer_Student_Page')
-data.setCell(0, 3, 54922);
+data.setCell(0, 3, 56646);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'emp_Create_NewsPost')
-data.setCell(1, 2, 'com.connectEDPortfolio.testCases.Employer_NewsPost')
-data.setCell(1, 3, 52900);
+data.setCell(1, 1, 'assignProgToExistingStu')
+data.setCell(1, 2, 'com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05')
+data.setCell(1, 3, 52950);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'assignProgToExistingStu')
+data.setCell(2, 1, 'addNewStudent')
 data.setCell(2, 2, 'com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05')
-data.setCell(2, 3, 52646);
+data.setCell(2, 3, 50390);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addNewStudent')
-data.setCell(3, 2, 'com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05')
-data.setCell(3, 3, 50755);
+data.setCell(3, 1, 'homePageVerification')
+data.setCell(3, 2, 'com.connectEDPortfolio.testCases.Employer_HomePage')
+data.setCell(3, 3, 46048);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'homePageVerification')
-data.setCell(4, 2, 'com.connectEDPortfolio.testCases.Employer_HomePage')
-data.setCell(4, 3, 44263);
+data.setCell(4, 1, 'addStudentNegativeTest')
+data.setCell(4, 2, 'com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05')
+data.setCell(4, 3, 37324);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'viewParticularStudent')
 data.setCell(5, 2, 'com.connectEDPortfolio.testCases.Employer_Student_Prog_Detail_Page_ETS06')
-data.setCell(5, 3, 30436);
+data.setCell(5, 3, 30992);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'addStudentNegativeTest')
-data.setCell(6, 2, 'com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05')
-data.setCell(6, 3, 30341);
+data.setCell(6, 1, 'positiveLoginTestCase')
+data.setCell(6, 2, 'com.connectEDPortfolio.testCases.Employer_Login')
+data.setCell(6, 3, 25318);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyStudentProgDetailPage')
 data.setCell(7, 2, 'com.connectEDPortfolio.testCases.Employer_Student_Prog_Detail_Page_ETS06')
-data.setCell(7, 3, 22774);
+data.setCell(7, 3, 20690);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'positiveLoginTestCase')
-data.setCell(8, 2, 'com.connectEDPortfolio.testCases.Employer_Login')
-data.setCell(8, 3, 17512);
+data.setCell(8, 1, 'viewProgressBtnFromModal')
+data.setCell(8, 2, 'com.connectEDPortfolio.testCases.Employer_Student_Page')
+data.setCell(8, 3, 12375);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'bulkImportStudent')
-data.setCell(9, 2, 'com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05')
-data.setCell(9, 3, 16970);
+data.setCell(9, 1, 'filterStudentByProgName')
+data.setCell(9, 2, 'com.connectEDPortfolio.testCases.Employer_Student_Page')
+data.setCell(9, 3, 11714);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'filterStudentByProgName')
+data.setCell(10, 1, 'deleteStudent')
 data.setCell(10, 2, 'com.connectEDPortfolio.testCases.Employer_Student_Page')
-data.setCell(10, 3, 11679);
+data.setCell(10, 3, 7791);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'viewProgressBtnFromModal')
+data.setCell(11, 1, 'searchStudent')
 data.setCell(11, 2, 'com.connectEDPortfolio.testCases.Employer_Student_Page')
-data.setCell(11, 3, 10867);
+data.setCell(11, 3, 6406);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'deleteStudent')
+data.setCell(12, 1, 'goToStudentPage')
 data.setCell(12, 2, 'com.connectEDPortfolio.testCases.Employer_Student_Page')
-data.setCell(12, 3, 7609);
+data.setCell(12, 3, 5131);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'searchStudent')
-data.setCell(13, 2, 'com.connectEDPortfolio.testCases.Employer_Student_Page')
-data.setCell(13, 3, 6477);
+data.setCell(13, 1, 'emp_Create_NewsPost')
+data.setCell(13, 2, 'com.connectEDPortfolio.testCases.Employer_NewsPost')
+data.setCell(13, 3, 1287);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'goToStudentPage')
-data.setCell(14, 2, 'com.connectEDPortfolio.testCases.Employer_Student_Page')
-data.setCell(14, 3, 5116);
+data.setCell(14, 1, 'bulkImportStudent')
+data.setCell(14, 2, 'com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05')
+data.setCell(14, 3, 1133);
 window.suiteTableData['Testing_ConnectedPortfolio']= { tableData: data, tableDiv: 'times-div-Testing_ConnectedPortfolio'}
 return data;
 }
@@ -588,173 +626,175 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.connectEDPortfolio.testCases.Employer_Login</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">onTestStart(org.testng.TestRunner@7f0d8eff)</span>
-                <span class="method-start">11532 ms</span>
+                <span class="method-name">onTestStart(org.testng.TestRunner@1118d539)</span>
+                <span class="method-start">12547 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">positiveLoginTestCase</span>
-                <span class="method-start">11569 ms</span>
+                <span class="method-start">12585 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Login.positiveLoginTestCase() throws java.lang...)</span>
-                <span class="method-start">29085 ms</span>
+                <span class="method-start">37923 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.connectEDPortfolio.testCases.Employer_HomePage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">onTestStart(org.testng.TestRunner@2a99ca99)</span>
-                <span class="method-start">29137 ms</span>
+                <span class="method-name">onTestStart(org.testng.TestRunner@7aded903)</span>
+                <span class="method-start">38162 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">homePageVerification</span>
-                <span class="method-start">29140 ms</span>
+                <span class="method-start">38164 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public static void com.connectEDPortfolio.testCases.Employer_HomePage.homePageVerification() throws ...)</span>
-                <span class="method-start">73410 ms</span>
+                <span class="method-start">84217 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.connectEDPortfolio.testCases.Employer_NewsPost</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">onTestStart(org.testng.TestRunner@39f0c343)</span>
-                <span class="method-start">73448 ms</span>
+                <span class="method-name">onTestStart(org.testng.TestRunner@2db86a7c)</span>
+                <span class="method-start">84252 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">emp_Create_NewsPost</span>
-                <span class="method-start">73463 ms</span>
+                <span class="method-start">84255 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(void com.connectEDPortfolio.testCases.Employer_NewsPost.emp_Create_NewsPost() throws java.lang.Inter...)</span>
-                <span class="method-start">126364 ms</span>
+                <span class="method-start">85561 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.connectEDPortfolio.testCases.Employer_Student_Page</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">onTestStart(org.testng.TestRunner@781654f8)</span>
-                <span class="method-start">126379 ms</span>
+                <span class="method-name">onTestStart(org.testng.TestRunner@261f359f)</span>
+                <span class="method-start">86506 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">goToStudentPage</span>
-                <span class="method-start">126383 ms</span>
+                <span class="method-start">86528 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Student_Page.goToStudentPage() throws java.lan...)</span>
-                <span class="method-start">131500 ms</span>
+                <span class="method-start">91663 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">searchStudent</span>
-                <span class="method-start">131503 ms</span>
+                <span class="method-start">91666 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Student_Page.searchStudent() throws java.lang....)</span>
-                <span class="method-start">137982 ms</span>
+                <span class="method-start">98073 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">filterStudentByProgName</span>
-                <span class="method-start">137983 ms</span>
+                <span class="method-start">98076 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Student_Page.filterStudentByProgName() throws ...)</span>
-                <span class="method-start">149663 ms</span>
+                <span class="method-start">109796 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">viewProgressBtnFromModal</span>
-                <span class="method-start">149665 ms</span>
+                <span class="method-start">109798 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Student_Page.viewProgressBtnFromModal() throws...)</span>
-                <span class="method-start">160536 ms</span>
+                <span class="method-start">122196 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">editStudent</span>
-                <span class="method-start">160540 ms</span>
+                <span class="method-start">122200 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Student_Page.editStudent() throws java.lang.In...)</span>
-                <span class="method-start">215465 ms</span>
+                <span class="method-start">178847 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">deleteStudent</span>
-                <span class="method-start">215468 ms</span>
+                <span class="method-start">178848 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Student_Page.deleteStudent() throws java.lang....)</span>
-                <span class="method-start">223080 ms</span>
+                <span class="method-start">186641 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">onTestStart(org.testng.TestRunner@2abc55c4)</span>
-                <span class="method-start">223158 ms</span>
+                <span class="method-name">onTestStart(org.testng.TestRunner@5b02a984)</span>
+                <span class="method-start">186673 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addNewStudent</span>
-                <span class="method-start">223160 ms</span>
+                <span class="method-start">186674 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.addNewStudent() throws ja...)</span>
-                <span class="method-start">273923 ms</span>
+                <span class="method-start">237070 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">assignProgToExistingStu</span>
-                <span class="method-start">274136 ms</span>
+                <span class="method-start">237260 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.assignProgToExistingStu()...)</span>
-                <span class="method-start">326790 ms</span>
+                <span class="method-start">290222 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">addStudentNegativeTest</span>
-                <span class="method-start">326956 ms</span>
+                <span class="method-start">290411 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.addStudentNegativeTest() ...)</span>
-                <span class="method-start">357300 ms</span>
+                <span class="method-start">327738 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">bulkImportStudent</span>
-                <span class="method-start">357308 ms</span>
+                <span class="method-start">327746 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Create_Student_ETS05.bulkImportStudent() throw...)</span>
-                <span class="method-start">374279 ms</span>
+                <span class="method-start">328882 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.connectEDPortfolio.testCases.Employer_Student_Prog_Detail_Page_ETS06</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">onTestStart(org.testng.TestRunner@4e958f08)</span>
-                <span class="method-start">374464 ms</span>
+                <span class="method-name">onTestStart(org.testng.TestRunner@57186526)</span>
+                <span class="method-start">329137 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">viewParticularStudent</span>
-                <span class="method-start">374465 ms</span>
+                <span class="method-start">329138 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Student_Prog_Detail_Page_ETS06.viewParticularS...)</span>
-                <span class="method-start">404905 ms</span>
+                <span class="method-start">360134 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyStudentProgDetailPage</span>
-                <span class="method-start">404909 ms</span>
+                <span class="method-start">360138 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">checkStatus(public void com.connectEDPortfolio.testCases.Employer_Student_Prog_Detail_Page_ETS06.verifyStudentPr...)</span>
-                <span class="method-start">427687 ms</span>
+                <span class="method-start">380833 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">427788 ms</span>
+                <span class="method-start">380862 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

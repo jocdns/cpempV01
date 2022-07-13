@@ -387,6 +387,8 @@ public class Employer_Create_Student_ETS05 extends BaseClass {
 	public void bulkImportStudent() throws InterruptedException, AWTException
 	{
 		extentTest.info("BulkImport Students test started");
+		driver.navigate().refresh();
+		Thread.sleep(4000);
 		driver.findElement(By.xpath("//a[contains(text(),'Bulk Import')]")).click();
 		Thread.sleep(3000);
 
