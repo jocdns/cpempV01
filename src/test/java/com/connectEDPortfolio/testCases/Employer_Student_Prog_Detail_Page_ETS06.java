@@ -5,10 +5,12 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class Employer_Student_Prog_Detail_Page_ETS06 extends BaseClass {
   
 	Employer_Student_Page espObj=new Employer_Student_Page();
+	SoftAssert softAssert = new SoftAssert();
 	
 	String searchPhaseName="Behaviour";
 	
